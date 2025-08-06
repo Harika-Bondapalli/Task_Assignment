@@ -30,12 +30,12 @@ Ant Design
 React-Leaflet
 Zustand
 Open-Meteo API
-Netlify (deployed)
+Vercel (deployed)
 
 Demo
-Live deployment on Netlify:
+Live deployment on Vercel:
 
-(Add your Netlify deployed URL here)
+https://task-assignment-five.vercel.app/
 
 Setup & Run Locally
 Clone the repo:
@@ -49,24 +49,18 @@ App runs at http://localhost:3000.
 
 Build for production:
 npm run build
-Deploy to Netlify:
+Deploy to vercel:
 
-Connect GitHub repo in Netlify > Import Project
+Connect GitHub repo in vercel > Import Project
 
 Build command: npm run build
 
 Publish directory: build
 
-Project Structure
-dashboard-meteo/
-  ├── src/
-  │   ├── assets/             # Dashboard screenshots and assets
-  │   ├── components/         # React components
-  │   ├── store/              # Zustand state stores
-  │   ├── api/                # API interface (Open-Meteo)
-  │   ├── App.tsx             # Main app
-  │   └── ...                 
-  └── README.md How To Use
+
+
+
+How To Use
 Draw polygons on the map.
 
 Select variables in the sidebar.
