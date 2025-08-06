@@ -1,46 +1,86 @@
-# Getting Started with Create React App
+Dashboard Meteo 
+An interactive dashboard to draw polygons on a map, select weather data variables and dates, and fetch real-time weather data from the Open-Meteo API. Supports multiple polygons, variable comparison, and easy extension with charts or advanced visualization.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Features
+Draw Polygons:
+Use the map to draw, list, select, and delete multiple polygons.
 
-## Available Scripts
+Sidebar Weather Selection:
+Choose between variables like Temperature, Precipitation, or Wind.
 
-In the project directory, you can run:
+Date Picker/Timeline:
+Pick a date to see hourly weather for that day.
 
-### `npm start`
+Live Weather Fetch:
+Requests data from Open-Meteo for your selected polygons, variable, and date.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Multi-Polygon Comparison:
+Select several polygons for comparative data fetching and viewing.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Responsive UI:
+Modern interface with Ant Design, React-Leaflet, Zustand, and TypeScript.
 
-### `npm test`
+Screenshots
+Screenshots of the working dashboard are available in the src/assets folder.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Tech Stack
+React
+TypeScript
+Ant Design
+React-Leaflet
+Zustand
+Open-Meteo API
+Netlify (deployed)
 
-### `npm run build`
+Demo
+Live deployment on Netlify:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+(Add your Netlify deployed URL here)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Setup & Run Locally
+Clone the repo:
+git clone https://github.com/USERNAME/dashboard-meteo.git
+cd dashboard-meteo
+Install dependencies:
+npm install
+Run the app in development mode:
+npm start
+App runs at http://localhost:3000.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Build for production:
+npm run build
+Deploy to Netlify:
 
-### `npm run eject`
+Connect GitHub repo in Netlify > Import Project
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Build command: npm run build
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Publish directory: build
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Project Structure
+dashboard-meteo/
+  ├── src/
+  │   ├── assets/             # Dashboard screenshots and assets
+  │   ├── components/         # React components
+  │   ├── store/              # Zustand state stores
+  │   ├── api/                # API interface (Open-Meteo)
+  │   ├── App.tsx             # Main app
+  │   └── ...                 
+  └── README.md How To Use
+Draw polygons on the map.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Select variables in the sidebar.
 
-## Learn More
+Pick a date via the date picker/timeline.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Select polygons via checkboxes for data comparison.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+View hourly weather data fetched instantly from Open-Meteo.
+
+Including Screenshots
+Dashboard output screenshots are stored in /src/assets.
+
+You may refer to them in documentation or presentations.
+
+By -- Harika Bondapalli
+
